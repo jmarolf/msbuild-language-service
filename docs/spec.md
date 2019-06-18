@@ -83,9 +83,21 @@ There exist several tools that attempt to change the format of msbuild project o
   - go to definition on properties and items
 
 - [MonoDevelop.MSBuildEditor](https://github.com/mhutch/MonoDevelop.MSBuildEditor/tree/library) A VS4Mac add in that provides:
-  - completion for all msbuild constructs
-  - quickinfo for all common msbuild constructs
+  - completion for all MSBuild constructs (including expressions and property/item functions)
+  - quickinfo for all MSBuild constructs
   - completion for package references
+  - completion for file paths
+  - go to definition on imports and targets
+  - accurate find references on targets, tasks, properties, items and metadata, including in imports that are skipped due to conditions
+  - validation of allowed/required elements and attributes
+  - validation of primitive and enum element and attribute values using schema-provided type information
+  - completion for comparands in comparisons
+  - sidecar schema system for custom targets to provide docs and type annotations
+  - extensive schemas for common targets, including documentation
+  - inferred schemas for unknown symbols in current file and imported targets
+  - reference highlighting for targets, tasks, properties, items and metadata
+  - task attribute completion and quickinfo from current solution's Roslyn compilation
+  - TextMate syntax highlighting for MSBuild expressions
 
 - [MSBuild project file tools](https://github.com/tintoy/msbuild-project-tools-vscode) A VS Code extension that provides:
   - completion for package references
